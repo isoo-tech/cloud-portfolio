@@ -23,7 +23,7 @@ resource "random_integer" "rand" {
 }
 
 resource "azurerm_static_web_app" "portfolio" {
-  name                = "cloudportfolio${random_integer.rand.result}"
+  name                = "ismael-portfolio"
   location            = azurerm_resource_group.portfolio_rg.location
   resource_group_name = azurerm_resource_group.portfolio_rg.name
   sku_tier            = "Free"
